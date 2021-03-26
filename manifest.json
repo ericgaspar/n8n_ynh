@@ -1,0 +1,66 @@
+{
+    "name": "Etherpad",
+    "id": "etherpad",
+    "packaging_format": 1,
+    "description": {
+        "en": "Online editor providing collaborative editing in real-time.",
+        "fr": "Éditeur en ligne fournissant l'édition collaborative en temps réel."
+    },
+    "version": "1.8.13~ynh1",
+    "url": "https://etherpad.org/",
+    "license": "Apache-2.0",
+    "maintainer": {
+        "name": "eric_G"
+    },
+    "requirements": {
+        "yunohost": ">= 4.1.7"
+    },
+    "multi_instance": true,
+    "services": [
+        "nginx"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "example": "example.com"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "example": "/etherpad",
+                "default": "/etherpad"
+            },
+            {
+                "name": "is_public",
+                "type": "boolean",
+                "help": {
+                    "en": "If enabled, Etherpad will be accessible by people who do not have an account. This can be changed later via the webadmin.",
+                    "fr": "Si cette case est cochée, Etherpad sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
+            },
+                "default": true
+            },
+            {
+                "name": "language",
+                "type": "string",
+                "ask": {
+                    "en": "Choose the application language",
+                    "fr": "Choisissez la langue de l'application"
+                },
+                "choices": ["de", "en", "es", "fr", "it", "pt"],
+                "default": "en"
+            },
+            {
+                "name": "admin",
+                "type": "user",
+                "example": "johndoe"
+            },
+            {
+                "name": "password",
+                "type": "password",
+                "example": "Choose a password"
+            }
+        ]
+    }
+}
