@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/ether/etherpad-lite/archive/1.8.13.tar.gz
-SOURCE_SUM=c83052daf3b0af8aa3c19a8308e21fcbcfecca99aeb3e8047383875f855443f1
+SOURCE_URL=https://github.com/n8n-io/n8n/archive/refs/tags/n8n@0.113.0.zip
+SOURCE_SUM=25f742d3cbd7285543859b76aacc3e12d8074829d5aab82d14000837a9f00094
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true

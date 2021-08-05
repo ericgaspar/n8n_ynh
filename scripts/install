@@ -84,13 +84,13 @@ ynh_system_user_create --username=$app --home_dir=$final_path
 
 #=================================================
 # CREATE A POSTQRESQL DATABASE
-#=================================================
-ynh_script_progression --message="Creating a PostgreSQL database..." --weight=5
+# #=================================================
+# ynh_script_progression --message="Creating a PostgreSQL database..." --weight=5
 
-db_name=$(ynh_sanitize_dbid --db_name=$app)
-ynh_app_setting_set --app=$app --key=db_name --value=$db_name
-ynh_psql_test_if_first_run
-ynh_psql_setup_db --db_user=$db_name --db_name=$db_name
+# db_name=$(ynh_sanitize_dbid --db_name=$app)
+# ynh_app_setting_set --app=$app --key=db_name --value=$db_name
+# ynh_psql_test_if_first_run
+# ynh_psql_setup_db --db_user=$db_name --db_name=$db_name
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -118,7 +118,7 @@ chown -R $app: $final_path
 
 pushd $final_path || ynh_die
  	ynh_use_nodejs
- 	ynh_exec_as $app env $ynh_node_load_PATH src/bin/installDeps.sh
+ 	ynh_exec_as $app env $ynh_node_load_PATH npm install n8n -g
 popd || ynh_die
 
 #=================================================

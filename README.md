@@ -1,4 +1,4 @@
-# Etherpad-Lite for YunoHost
+# n8n for YunoHost
 
 [![Integration level](https://dash.yunohost.org/integration/etherpad.svg)](https://dash.yunohost.org/appci/app/etherpad) ![](https://ci-apps.yunohost.org/ci/badges/etherpad.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/etherpad.maintain.svg)  
 [![Install Etherpad-Lite with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=etherpad)
@@ -54,8 +54,8 @@ You can access Etherpad's admin panel at `domain.tld/admin`. The configuration f
 ## Links
 
  * Report a bug: https://github.com/YunoHost-Apps/etherpad_ynh/issues
- * Etherpad website: http://etherpad.org/
- * Upstream app repository: https://github.com/ether/etherpad-lite
+ * n8n website: https://n8n.io/
+ * Upstream app repository: https://github.com/n8n-io/n8n
  * YunoHost website: https://yunohost.org/
 
 ---

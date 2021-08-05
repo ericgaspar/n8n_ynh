@@ -1,6 +1,6 @@
 {
-    "name": "Etherpad",
-    "id": "etherpad",
+    "name": "n8n",
+    "id": "n8n",
     "packaging_format": 1,
     "description": {
         "en": "Online editor providing collaborative editing in real-time.",
@@ -29,8 +29,8 @@
             {
                 "name": "path",
                 "type": "path",
-                "example": "/etherpad",
-                "default": "/etherpad"
+                "example": "/n8n",
+                "default": "/n8n"
             },
             {
                 "name": "is_public",
