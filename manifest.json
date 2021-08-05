@@ -3,11 +3,11 @@
     "id": "n8n",
     "packaging_format": 1,
     "description": {
-        "en": "Online editor providing collaborative editing in real-time.",
-        "fr": "Éditeur en ligne fournissant l'édition collaborative en temps réel."
+        "en": "",
+        "fr": ""
     },
     "version": "1.8.13~ynh1",
-    "url": "https://etherpad.org/",
+    "url": "",
     "license": "Apache-2.0",
     "maintainer": {
         "name": "eric_G"
@@ -40,26 +40,6 @@
                     "fr": "Si cette case est cochée, Etherpad sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
             },
                 "default": true
-            },
-            {
-                "name": "language",
-                "type": "string",
-                "ask": {
-                    "en": "Choose the application language",
-                    "fr": "Choisissez la langue de l'application"
-                },
-                "choices": ["de", "en", "es", "fr", "it", "pt"],
-                "default": "en"
-            },
-            {
-                "name": "admin",
-                "type": "user",
-                "example": "johndoe"
-            },
-            {
-                "name": "password",
-                "type": "password",
-                "example": "Choose a password"
             }
         ]
     }

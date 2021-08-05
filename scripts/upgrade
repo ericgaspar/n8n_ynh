@@ -64,7 +64,7 @@ fi
 #=================================================
 # BACKUP BEFORE UPGRADE THEN ACTIVE TRAP
 #=================================================
-ynh_script_progression --message="Backing up Etherpad before upgrading (may take a while)..." --weight=1
+ynh_script_progression --message="Backing up the app before upgrading (may take a while)..." --weight=1
 
 # Backup the current version of the app
 ynh_backup_before_upgrade
@@ -168,14 +168,14 @@ ynh_add_systemd_config --others_var="ynh_node_load_PATH"
 #=================================================
 ynh_script_progression --message="Integrating service in YunoHost..." --weight=2
 
-yunohost service add $app --description="Collaborative editor" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression --message="Starting a systemd service..." --weight=6
 
-ynh_systemd_action --service_name=$app --action=restart --log_path=systemd --line_match="Your Etherpad version is"
+ynh_systemd_action --service_name=$app --action=restart --log_path=systemd --line_match=""
 
 #=================================================
 # RELOAD NGINX
@@ -188,4 +188,4 @@ ynh_systemd_action --service_name=nginx --action=reload
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Upgrade of Etherpad completed" --last
+ynh_script_progression --message="Upgrade of $app completed" --last

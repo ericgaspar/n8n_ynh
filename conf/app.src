@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/n8n-io/n8n/archive/refs/tags/n8n@0.113.0.zip
-SOURCE_SUM=25f742d3cbd7285543859b76aacc3e12d8074829d5aab82d14000837a9f00094
+SOURCE_URL=https://github.com/n8n-io/n8n/archive/refs/tags/n8n@0.132.2.tar.gz
+SOURCE_SUM=26b419f6a8859f3bced47ed616e48fa76b3f9121c376319342206e335564c5f3
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
